@@ -1,5 +1,6 @@
 package com.example.weather;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.weather.gson.Forecast;
 import com.example.weather.gson.Weather;
+import com.example.weather.service.AutoUpdateService;
 import com.example.weather.util.HttpUtil;
 import com.example.weather.util.Utility;
 
@@ -167,6 +169,7 @@ public class WeatherActivity extends AppCompatActivity {
         degreeText.setText(degree);
         weatherInfoText.setText(weatherInfo);
         forecastLayout.removeAllViews();
+        weatherLayout.setVisibility(View.VISIBLE);
         for (Forecast forecast : weather.forecastList) {
             View view = LayoutInflater.from(this).inflate(R.layout.forecast_item, forecastLayout, false);
             TextView dateText = (TextView) view.findViewById(R.id.date_text);
@@ -190,7 +193,11 @@ public class WeatherActivity extends AppCompatActivity {
         carWashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
+        //激活定时更新服务
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
+
 
     /**
      * 加载必应每日一图

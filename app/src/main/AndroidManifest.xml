@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.weather">
+
     <!-- 网络请求配置 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,7 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WeatherActivity"></activity>
+        <service
+            android:name=".service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".WeatherActivity" />
         <activity android:name=".util.Utility" />
         <activity android:name=".util.HttpUtil" />
         <activity android:name="db.ChooseAreaFragment" />

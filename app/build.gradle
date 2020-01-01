@@ -36,4 +36,5 @@ dependencies {
     //网络请求用于进行网络请求，
     implementation 'com.squareup.okhttp3:okhttp:4.3.0'
     implementation 'org.litepal.android:core:1.6.1'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
 }

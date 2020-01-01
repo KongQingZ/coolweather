@@ -12,12 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".util.Utility"></activity>
+        <activity android:name=".WeatherActivity"></activity>
+        <activity android:name=".util.Utility" />
         <activity android:name=".util.HttpUtil" />
-        <activity android:name="db.ChooseAreaFragment"></activity>
+        <activity android:name="db.ChooseAreaFragment" />
         <activity android:name=".db.City" />
         <activity android:name=".db.County" />
         <activity android:name=".db.Province" />
+        <activity android:name=".gson.Basic" />
+        <activity android:name=".gson.AQI" />
+        <activity android:name=".gson.Now" />
+        <activity android:name=".gson.Weather" />
+        <activity android:name=".gson.Suggestion" />
+        <activity android:name=".gson.Forecast" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

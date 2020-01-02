@@ -17,6 +17,5 @@
     implementation 'org.litepal.android:core:1.6.1'  
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'  
   **别忘了在AndroidManifest.xml中加上下面这句话**  
-     网络请求配置 
-    <uses-permission android:name="android.permission.INTERNET" />
-
+     ***网络请求配置 ***   
+ uses-permission android:name="android.permission.INTERNET"

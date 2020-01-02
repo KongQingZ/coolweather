@@ -5,7 +5,7 @@
 2. compileSdkVersion 29
     buildToolsVersion '28.0.3'
 ##  本项目需要添加的依赖：
-   //gson数据，GSON用于解析JSON数据
+ '''  //gson数据，GSON用于解析JSON数据
     implementation 'com.google.code.gson:gson:2.8.6'
     //用于 加载和展示图片
     implementation 'com.github.bumptech.glide:glide:3.7.0'
@@ -14,4 +14,4 @@
     implementation 'com.squareup.okhttp3:okhttp:4.3.0'
     implementation 'org.litepal.android:core:1.6.1'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
-    
+'''    

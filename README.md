@@ -1,10 +1,10 @@
-＃ 凉爽的天气
+＃   凉爽的天气
 这是一个天气的Android Studio项目，模仿第一行代码里的天气，不过第一行代码（第二版）时间有些老，一些依赖包不符合现在的规则，Android Studio3.5之后就有更新，之前complie”变为implementation,之前通用的V-4,V-7包也都进化了，这个程序是我学习过程中测试通过的，用于交流学习。
-##运行版本：
+##  运行版本：
 1：Android  Studio  3.5.2
     compileSdkVersion 29
     buildToolsVersion '28.0.3'
-##本项目需要添加的依赖：
+##  本项目需要添加的依赖：
    //gson数据，GSON用于解析JSON数据
     implementation 'com.google.code.gson:gson:2.8.6'
     //用于 加载和展示图片
